@@ -12,11 +12,20 @@ header {
   margin: 40px;
 }
 
-section {
+#row {
+  width: 100%;
+}
+
+#row section {
   float: left;
+
+}
+
+section > div {
   border: 1px solid black;
   position: relative;
   background: #d3d3d3;
+  margin: 10px;
 }
 
 div.title {
