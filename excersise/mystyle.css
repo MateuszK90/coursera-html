@@ -2,32 +2,59 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: cursive;
+  font-size: 100%;
+}
+
+header {
+  font-size: 175%;
+  text-align: center;
+  margin: 40px;
 }
 
 section {
-  position: relative;
+  float: left;
   border: 1px solid black;
-  padding: 10px;
+  position: relative;
+  background: #d3d3d3;
 }
 
 div.title {
-  float: right;
-  position: relative;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 150px;
+  font-size: 125%;
+  text-align: center;
+}
+
+div.title div {
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+div#Chicken {
+  background: pink;
+}
+
+div#Beef{
+  background: brown;
+  color: white;
+}
+
+div#Sushi {
+  background: yellow;
 }
 
 div.tekst {
-  clear: right;
+  margin-top: 30px;
   text-align: justify;
+  padding: 15px;
 }
 
 
 /*DESKTOP*/
 @media (min-width: 992px) {
-  .col-ds-1, .col-ds-2, .col-ds-3, .col-ds-4, .col-ds-5, .col-ds-6, .col-ds-7, .col-ds-8, .col-ds-9, .col-ds-10, .col-ds-11, .col-ds-12 {
-    float: left;
-    border: 1px solid black;
-    padding: 10px;
-  }
   .col-ds-1 {
     width: 8.33%;
   }
@@ -68,11 +95,6 @@ div.tekst {
 
 /*TABLET*/
 @media (min-width: 768px) and (max-width: 991px){
-    .col-ts-1, .col-ts-2, .col-ts-3, .col-ts-4, .col-ts-5, .col-ts-6, .col-ts-7, .col-ts-8, .col-ts-9, .col-ts-10, .col-ts-11, .col-ts-12 {
-    float: left;
-    border: 1px solid black;
-    padding: 10px;
-  }
   .col-ts-1 {
     width: 8.33%;
   }
